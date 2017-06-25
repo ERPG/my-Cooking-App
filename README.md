@@ -1,5 +1,6 @@
 # MyCookingApp
 
+Making Application to create, delete and modify recipes with the Tools that Angular 2 provide.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
 
 ## Development server
