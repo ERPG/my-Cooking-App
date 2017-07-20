@@ -1,3 +1,5 @@
+[![Angular2](http://blog.groveus.com/assets/uploads/news/angl.png)](http://https://angular.io/)
+
 # MyCookingApp
 
 Making Application to create, delete and modify recipes with the Tools that Angular 2 provide.
