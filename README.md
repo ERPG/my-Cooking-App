@@ -1,4 +1,4 @@
-[![Angular2](http://blog.groveus.com/assets/uploads/news/angl.png)](http://https://angular.io/)
+[![Angular2](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp0ImsGnucU2BOTee5NvIvRc55z5EqsNDWkz1_mb4LW2L1coESKg)](https://cli.angular.io/)
 
 # MyCookingApp
 
