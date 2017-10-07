@@ -9,14 +9,10 @@ import { RecipeService } from './recipe.service';
   providers: [RecipeService] // service on the parent component is available in all childreen
 })
 export class RecipesComponent implements OnInit {
-selectedRecipe: Recipe;
-  constructor(private recipeService: RecipeService) { }
+
+  constructor() { }
 
   ngOnInit() {
-    this.recipeService.recipeSelected
-      .subscribe( //listen to the Events
-        (recipe: Recipe) => { this.selectedRecipe = recipe; }
-      )
   }
 
 }

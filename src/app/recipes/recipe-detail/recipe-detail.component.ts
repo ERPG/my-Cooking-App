@@ -34,6 +34,7 @@ id: number;
 
   onEditRecipe() {
     this.router.navigate(['edit'], { relativeTo: this.route });
+
     // Alternative constructing path
     // this.route.navigate([../, this.id, 'edit'], { relativeTo: this.route })
   }
