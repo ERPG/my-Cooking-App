@@ -1,3 +1,4 @@
+
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 import { ShoppingListService } from '../shooping-list/shooping-list.service';
@@ -11,7 +12,7 @@ export class RecipeService {
   private recipes: Recipe[] = [
     new Recipe(
     'A test recipe',
-    'this is cimply test',
+    'this is simply test',
     'http://cdn-img.health.com/sites/default/files/styles/small_16_9/public/1493659062/tangy-coleslaw-bbq.jpg?itok=3T8GFBc_',
     [
       new Ingredient('peanut', 5),
@@ -40,6 +41,11 @@ export class RecipeService {
 
   constructor(private slService: ShoppingListService) {}
  // add the injectable service to the constructor to get access to it.
+
+ setRecipe(recipes: Recipe[]) {
+   this.recipes = recipes;
+   this.recipesChanged.next(this.recipes.slice());
+ }
 
   getRecipes() {
     return this.recipes.slice();

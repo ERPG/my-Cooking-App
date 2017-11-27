@@ -13,8 +13,8 @@
           <!--Bind the directive to the container to listen event and add the class to it-->
           <a class="dropdown-toogle" role="button">Manage <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a style="cursor: pointer;">Saving Data</a></li>
-            <li><a style="cursor: pointer;">Fetch Data</a></li>
+            <li><a style="" (click)="onSave()">Saving Data</a></li>
+            <li><a style="" (click)="getRecipe()">Fetch Data</a></li>
           </ul>
         </li>
       </ul>
