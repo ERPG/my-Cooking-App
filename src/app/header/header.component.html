@@ -9,7 +9,12 @@
         <li routerLinkActive="active"><a routerLink='/shooping-list'>Shopping List</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown" appDropdown>
+        <ng-template [ngIf]="!authService.isAuthenticated()">
+          <li><a routerLink='/signup'>Register</a></li>
+          <li><a routerLink='/signin'>Log In</a></li>
+        </ng-template>
+        <li><a (click)="logout()" cursor="pointer" *ngIf="authService.isAuthenticated()">Log out</a></li>
+        <li class="dropdown" appDropdown *ngIf="authService.isAuthenticated()">
           <!--Bind the directive to the container to listen event and add the class to it-->
           <a class="dropdown-toogle" role="button">Manage <span class="caret"></span></a>
           <ul class="dropdown-menu">
